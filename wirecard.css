@@ -86,4 +86,5 @@ input.error:focus, select.error:focus {
     color: #a94442;
     font-size: 12px;
     padding-left: 147px;
+    float: none;
 }
