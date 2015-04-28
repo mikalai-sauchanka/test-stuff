@@ -1,5 +1,5 @@
 .maincontainer {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 label {
@@ -26,10 +26,24 @@ label {
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
+input.error, select.error {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+input.error:focus, select.error:focus {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+
 .fieldtext {
     display: block;
-    width: 100%;
-    width: calc(100% - 135px);
+    float: none;
+    margin: 0 -145px 0 0;
+    box-sizing: border-box;
+    position: relative;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
@@ -43,4 +57,31 @@ label {
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.messagebox {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+}
+
+.messagebox.error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    vertical-align: middle;
+}
+
+.infobox:before {
+    clear:both;
+    display: block;
+    content: "";
+}
+
+.infobox {
+    color: #a94442;
 }
