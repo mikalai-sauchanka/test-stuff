@@ -8,6 +8,7 @@ label {
 
 .fieldlabel {
     font-size: 14px;
+    width: 30%;
 }
 
 .fieldselect {
@@ -41,9 +42,8 @@ input.error:focus, select.error:focus {
 .fieldtext {
     display: block;
     float: none;
-    margin: 0 -145px 0 0;
+    width: 70%;
     box-sizing: border-box;
-    position: relative;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
@@ -84,4 +84,6 @@ input.error:focus, select.error:focus {
 
 .infobox {
     color: #a94442;
+    font-size: 12px;
+    padding-left: 147px;
 }
